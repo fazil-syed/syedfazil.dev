@@ -104,7 +104,6 @@ export default function SettingsModal({ isOpen, onClose, data, lang, setLang }: 
                         onClick={() => {
                           if (isSupported) {
                             setLang(l.code);
-                            window.history.pushState({}, '', `/${l.code}`);
                           }
                         }}
                         className={`text-left px-4 py-2.5 rounded-xl transition-all duration-200 ${
