@@ -25,11 +25,11 @@ export default function AboutSection({ data }: Props) {
     >
       <motion.h2
         variants={item}
-        className="text-6xl font-extrabold tracking-tight mb-12 text-text-primary leading-tight"
+        className="text-4xl md:text-6xl font-extrabold tracking-tight mb-12 text-text-primary leading-tight"
       >
         {data.title}
       </motion.h2>
-      <motion.p variants={item} className="text-xl text-text-muted leading-[1.9] font-light whitespace-pre-wrap">
+      <motion.p variants={item} className="text-base md:text-xl text-text-muted leading-[1.9] font-light whitespace-pre-wrap">
         {data.content}
       </motion.p>
     </motion.section>

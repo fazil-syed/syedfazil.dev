@@ -57,7 +57,7 @@ export default function ExperienceSectionView({ data }: Props) {
     >
       <motion.h2
         variants={cardVariant}
-        className="text-6xl font-extrabold tracking-tight text-text-primary leading-tight"
+        className="text-4xl md:text-6xl font-extrabold tracking-tight text-text-primary leading-tight"
       >
         {data.title}
       </motion.h2>
@@ -72,7 +72,7 @@ export default function ExperienceSectionView({ data }: Props) {
             {/* Company header */}
             <div className="flex items-start justify-between">
               <div>
-                <h3 className="text-2xl font-extrabold text-text-primary">{company}</h3>
+                <h3 className="text-xl md:text-2xl font-extrabold text-text-primary">{company}</h3>
                 <p className="text-sm font-bold text-teal-400 mt-1 flex items-center gap-1 cursor-pointer hover:opacity-80 transition-opacity uppercase tracking-widest">
                   {roles[0].role} <ExternalLinkIcon size={12} />
                 </p>
@@ -90,7 +90,7 @@ export default function ExperienceSectionView({ data }: Props) {
                   <div className="absolute left-0 top-1.5 w-[15px] h-[15px] rounded-full border-2 border-text-primary bg-bg-sidebar z-10" />
 
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-lg font-bold text-text-primary">{exp.role}</h4>
+                    <h4 className="text-base md:text-lg font-bold text-text-primary">{exp.role}</h4>
                     <span className="bg-bg-base border border-border-subtle px-3 py-1 rounded-md text-[10px] font-bold text-text-muted uppercase tracking-widest">
                       {getYear(exp.duration)}
                     </span>

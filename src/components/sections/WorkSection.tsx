@@ -57,7 +57,7 @@ function WorkCard({ project, index }: { project: ProjectData; index: number }) {
         )}
 
         {/* Name */}
-        <h3 className="text-xl font-bold text-text-primary mb-3 group-hover:text-teal-400 transition-colors">
+        <h3 className="text-lg md:text-xl font-bold text-text-primary mb-3 group-hover:text-teal-400 transition-colors">
           {project.title}
         </h3>
 
@@ -115,7 +115,7 @@ export default function WorkSection({ work, label }: Props) {
     >
       {/* Header */}
       <motion.div variants={item} className="flex items-end justify-between">
-        <h2 className="text-6xl font-extrabold tracking-tight text-text-primary leading-tight">
+        <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight text-text-primary leading-tight">
           {label}
         </h2>
         <span className="bg-bg-sidebar border border-border-subtle px-3 py-1 rounded-full text-xs font-bold text-text-primary mb-2">

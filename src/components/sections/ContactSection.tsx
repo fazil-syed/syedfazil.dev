@@ -45,11 +45,11 @@ export default function ContactSection({ contact, socialLinks }: Props) {
       <div>
         <motion.h2
           variants={item}
-          className="text-6xl font-extrabold tracking-tight text-text-primary leading-tight mb-4"
+          className="text-4xl md:text-6xl font-extrabold tracking-tight text-text-primary leading-tight mb-4"
         >
           {contact.headline}
         </motion.h2>
-        <motion.p variants={item} className="text-text-muted text-base mb-8">
+        <motion.p variants={item} className="text-text-muted text-sm md:text-base mb-8">
           {contact.subtitle}
         </motion.p>
 
@@ -58,7 +58,7 @@ export default function ContactSection({ contact, socialLinks }: Props) {
             <p className="text-xs font-semibold tracking-widest uppercase text-text-muted mb-1">Email</p>
             <a
               href={`mailto:${contact.email}`}
-              className="text-xl font-bold text-text-primary hover:opacity-70 transition-opacity"
+              className="text-lg md:text-xl font-bold text-text-primary hover:opacity-70 transition-opacity"
             >
               {contact.email}
             </a>
@@ -67,7 +67,7 @@ export default function ContactSection({ contact, socialLinks }: Props) {
           {contact.phone && (
             <div>
               <p className="text-xs font-semibold tracking-widest uppercase text-text-muted mb-1">Telephone</p>
-              <p className="text-xl font-bold text-text-primary">{contact.phone}</p>
+              <p className="text-lg md:text-xl font-bold text-text-primary">{contact.phone}</p>
             </div>
           )}
         </motion.div>
@@ -103,7 +103,7 @@ export default function ContactSection({ contact, socialLinks }: Props) {
         variants={item}
         className="bg-bg-sidebar border border-border-subtle rounded-2xl p-8"
       >
-        <h3 className="text-xl font-bold text-text-primary mb-6">{contact.message}</h3>
+        <h3 className="text-lg md:text-xl font-bold text-text-primary mb-6">{contact.message}</h3>
         <form
           className="space-y-4"
           onSubmit={(e) => {
