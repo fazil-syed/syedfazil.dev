@@ -20,7 +20,7 @@ const pageVariants = {
 
 export default function MainContent({ data, currentSection }: Props) {
   return (
-    <main className="flex-1 p-12 min-h-screen">
+    <main className="flex-1 p-6 pb-28 md:p-12 min-h-screen">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSection}

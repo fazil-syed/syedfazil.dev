@@ -44,7 +44,7 @@ export default function Portfolio({ allData, initialLang }: { allData: Record<st
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 0.6, ease: 'easeInOut' } }}
             transition={{ duration: 0.6, ease: 'easeInOut' }}
-            className="col-start-1 row-start-1 flex min-h-screen bg-bg-base text-text-primary w-full"
+            className="col-start-1 row-start-1 flex flex-col md:flex-row min-h-screen bg-bg-base text-text-primary w-full"
           >
             <Sidebar {...sharedProps} />
             <MainContent data={data} currentSection={currentSection} />
