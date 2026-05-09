@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: var(--bg-base);
+  --color-bg-sidebar: var(--bg-sidebar);
+  --color-text-primary: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-hover: var(--border-hover);
+  --color-overlay-bg: var(--overlay-bg);
+  --shadow-subtle: var(--shadow-subtle);
+  --shadow-hover: var(--shadow-hover);
+}
+
+@layer base {
+  :root {
+    /* Light Mode */
+    --bg-base: #ffffff;
+    --bg-sidebar: #f8f9fa;
+    --text-primary: #121212;
+    --text-muted: #666666;
+    --border-subtle: #e5e5e5;
+    
+    /* Light Mode Variables for Shadows and Hover States */
+    --shadow-subtle: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-hover: 0 8px 32px rgba(0,0,0,0.12);
+    --border-hover: #d4d4d8;
+    --overlay-bg: rgba(255, 255, 255, 0.7);
+  }
+  
+  :root.dark {
+    /* Dark Mode - Primary */
+    --bg-base: #0a0a0a;
+    --bg-sidebar: #000000;
+    --text-primary: #f8f8f8;
+    --text-muted: #a1a1aa;
+    --border-subtle: #27272a;
+    
+    /* Dark Mode Variables for Shadows and Hover States */
+    --shadow-subtle: 0 4px 12px rgba(0,0,0,0.5);
+    --shadow-hover: 0 8px 32px rgba(0,0,0,0.5);
+    --border-hover: #52525b;
+    --overlay-bg: rgba(0, 0, 0, 0.6);
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}

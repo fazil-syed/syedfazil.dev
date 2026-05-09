@@ -1,0 +1,87 @@
+{
+  "personal": {
+    "name": "Syed Fazil",
+    "role": "Software Engineer",
+    "image": "https://avatars.githubusercontent.com/u/84120587",
+    "email": "contact@syedfazil.dev",
+    "social_links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/fazil-syed"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/syed-fazil"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com/not_fazzzil"
+      }
+    ]
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "content": "I am a Software Engineer focused on architecting high-performance security infrastructure, enterprise-scale automation, and building impactful Android applications. My expertise lies in integrating complex, disparate ecosystems into streamlined workflows that transform manual governance into autonomous systems. Currently, I specialize in automating Identity & Access Management (IAM) lifecycles and leveraging AI to solve high-volume operational challenges, bridging the gap between robust security foundations and scalable product delivery. A Computer Science graduate from Dayananda Sagar College of Engineering, I am dedicated to solving real-world problems with engineering precision—whether that means orchestrating secure data pipelines with Python and Go, or crafting intuitive, performance-driven mobile experiences for Android."
+  },
+  "experience": {
+    "title": "Experience",
+    "experience": [
+      {
+        "role": "InfoSec Engineer",
+        "company": "PhonePe",
+        "duration": "July 2025 — Present",
+        "highlights": [
+          "Architecting enterprise-grade security automation and unified governance platforms for complex organizational ecosystems.",
+          "Automating global access lifecycle workflows and governance reviews across disparate SaaS and infrastructure environments.",
+          "Pioneering AI-driven initiatives to streamline internal operations and automate mission-critical support-to-solution pipelines."
+        ]
+      },
+      {
+        "role": "InfoSec Engineer Intern",
+        "company": "PhonePe",
+        "duration": "Nov 2024 — June 2025",
+        "highlights": [
+          "Developed high-impact automation platforms for enterprise compliance and organizational access governance.",
+          "Engineered custom integration services to bridge the gap between security management tools and diverse SaaS platforms.",
+          "Implemented automated anomaly detection services to identify and resolve cross-system architectural discrepancies."
+        ]
+      }
+    ]
+  },
+  "work": [
+    {
+      "id": "teamind",
+      "title": "TeaMind",
+      "description": "A minimal, performance-focused Android app for task and habit optimization. Features custom recurrence logic, granular reminder scheduling, and an intuitive drag-and-drop/swipe-based interface.",
+      "tags": [
+        "Android",
+        "Kotlin",
+        "Jetpack Compose",
+        "Clean Architecture"
+      ],
+      "work_type": "project",
+      "image": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?q=80&w=1480&auto=format&fit=crop",
+      "open_link": "#"
+    }
+  ],
+  "contact": {
+    "title": "Contact",
+    "headline": "Let's Build Something Secure.",
+    "subtitle": "Open for new opportunities and collaborations.",
+    "email": "contact@syedfazil.dev",
+    "message": "Send a Message"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light"
+  }
+}

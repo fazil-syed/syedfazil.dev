@@ -1,0 +1,54 @@
+---
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import Portfolio from '../../components/Portfolio.tsx';
+import '../../styles/global.css';
+import type { PortfolioData } from '../../types';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'kn' } },
+    { params: { lang: 'hi' } },
+  ];
+}
+
+const { lang } = Astro.params;
+
+const getLangData = async (l: string) => {
+  const filePath = path.join(process.cwd(), 'src', 'data', l, 'data.json');
+  return JSON.parse(await fs.readFile(filePath, 'utf-8')) as PortfolioData;
+};
+
+const allData = {
+  en: await getLangData('en'),
+  kn: await getLangData('kn'),
+  hi: await getLangData('hi'),
+};
+const data = allData[lang as keyof typeof allData];
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href={data.personal.image ?? '/favicon.svg'} />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{data.personal.name} - {data.personal.role}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script is:inline>
+      const theme = localStorage.getItem('theme');
+      if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body>
+    <Portfolio client:load allData={allData} initialLang={lang as string} />
+  </body>
+</html>
