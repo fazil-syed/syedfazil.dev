@@ -24,7 +24,7 @@ const data = allData[defaultLang];
 <html lang={defaultLang}>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href={data.personal.image ?? '/favicon.svg'} />
+    <link rel="icon" href={data.personal.image ?? '/favicon.svg'} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{data.personal.name} - {data.personal.role}</title>
